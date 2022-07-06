@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New patient</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Raleway&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img src="../assets/logo.jpg" alt="logo of the page" class="content__logo"/>
+            <a href=../index.html class="content__tittle">CLINICAL RECORD</a>
+            <nav class="content__navbar">
+                <ul>
+                    <li><a href="./logging.html">Log in</a></li>    
+                    <li><a href="./serch_patient.html">Serch patient</a></li>
+                    <li><a href="./new_patient.html">New patient</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form action="" method="POST" enctype="multipart/form-data"></form>
+                <label for="name">Enter name</label>    
+                <input type="text" id="name" name="name" placeholder="name..." />
+                <br />
+                <label for="last_name">Enter last name</label>    
+                <input type="text" id="last_name" name="last_name" placeholder="last name..." />
+                <br />
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="start" name="trip-start" value="1996-09-27"
+                       min="1970-01-01" max="2022-12-31">
+                <br />
+                <label for="email">Enter email</label>    
+                <input type="text" id="email" name="email" placeholder="email..." />
+                <br />
+                <label for="gender">Select Gender</label>    
+                <select name="gender" id="gender" >
+                    <option value="male">Male</option>
+                    <option value="feminine">Feminine</option>
+                </select>
+                <br />
+                <fieldset>
+                    <legend>Background</legend>
+                    <label for="asthma">Asthma</label>
+                    <input type="radio" id="asthma" />
+                    <label for="heart_disease">heart disease</label>
+                    <input type="radio" id="heart_disease" />
+                    <label for="allergic">allergic</label>
+                    <input type="radio" id="allergic" />
+                    <label for="diabetes">Diabetes</label>
+                    <input type="radio" id="diabetes" />
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Clean</button>
+        </section>  
+    </main>
+    <footer>
+        <div class="footer"> 
+            <h3 class="footer__tittle">Get in touch</h3>
+            <h4 class="footer__subtittle">Contact us</h4>
+        </div>
+    </footer>
+</body>
+</html>
