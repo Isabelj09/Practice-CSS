@@ -41,7 +41,7 @@ ul{
 .header {
     grid-area: header;
     color: white;
-    background-image: linear-gradient(to btton, blue, purple);
+    background-image: linear-gradient(to botton, blue, purple);
     /*background-color: rgb(33, 143, 143);*/
     padding: 30px 20px;
     
