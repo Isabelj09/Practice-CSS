@@ -1,0 +1,22 @@
+{
+  "name": "clinicalrecord",
+  "version": "1.0.0",
+  "description": "proyecto practico",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isabelj09/Practice-CSS.git"
+  },
+  "author": "Isabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isabelj09/Practice-CSS/issues"
+  },
+  "homepage": "https://github.com/Isabelj09/Practice-CSS#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
