@@ -1,3 +1,57 @@
-body {
-    color: black;
+@import 'global';
+
+.headerg {
+    grid-area: header;
+    color: white;
+    background-image: linear-gradient(to botton, blue, purple);
+    padding: 30px 20px;
+    
+}
+
+.header {
+    @extend .headerg;
+}
+
+
+
+
+@mixin card-base($lengt) {
+    border-radius: 10px;
+    background-color: beige;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    transform: scale(1.3) translate(-200px);
+    transition: transform 0.3s;
+
+    @if ($lengt == 'sm') {
+        max-width: 50%;
+    } @else if ($lengt == 'md') {
+        max-width: 75%;
+    }@else {
+        max-width: 100%;
+    }
+}
+
+.card {
+    @include card-base('sm');
+
+}
+
+$socialmedia: (
+    facebook: #2279e4,
+    twitter: #55acee,
+    instagram: #c92d8f,
+);
+
+@each $name, $color in $socialmedia {
+    .link-#{$nombre} {
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: $color;
+
+    }
+    
 }
