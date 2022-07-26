@@ -44,7 +44,7 @@ $socialmedia: (
 );
 
 @each $name, $color in $socialmedia {
-    .link-#{$nombre} {
+    .link-#{$name} {
         margin: 0 5px;
         padding: 10px;
         border-radius: 10px;
